@@ -1,0 +1,27 @@
+{
+  // Tailwind CSS IntelliSense 拡張(bradlc.vscode-tailwindcss)で CSS を Tailwind として扱う
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  // 保存時の整形はすべて Biome で行う(エディタ標準のフォーマッタとの整形差分を防ぐ)
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  // 保存時に Biome の自動修正と import の並び替えを行う
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  // bun.lock は bun が生成するファイルなので、エディタで編集・整形させない
+  "files.readonlyInclude": {
+    "**/bun.lock": true
+  }
+}
