@@ -1,0 +1,4 @@
+{
+  // このリポジトリを開いたときにインストールを勧める拡張機能
+  "recommendations": ["biomejs.biome", "bradlc.vscode-tailwindcss"]
+}
